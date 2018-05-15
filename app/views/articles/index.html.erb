@@ -1,0 +1,17 @@
+<h1>Articles#index</h1>
+
+<%= link_to "New Article", new_article_path %>
+<br>
+<br>
+
+<% @articles.each do |article| %>
+  <%= article.title %>
+  <br>
+  <%= article.content %>
+  <br>
+  <%= link_to "Edit Article", edit_article_path(article) %>
+  <%= link_to "Delete Article", article_path(article), method: :delete, data: { confirm: "Are you sure?" } %>
+  <br>
+  <br>
+  <br>
+<% end %>
