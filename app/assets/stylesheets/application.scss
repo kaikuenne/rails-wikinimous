@@ -1,0 +1,19 @@
+@import 'bootstrap';
+@import 'articles';
+
+.navbar {
+  height: 12vh;
+  background-color: #858CEA;
+}
+
+h1 {
+  color: white;
+}
+
+.nav-buttons > a {
+  margin: 5px;
+}
+
+.wrapper {
+  background-color: #F9F9F9;
+}
